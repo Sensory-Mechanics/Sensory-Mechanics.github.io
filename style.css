@@ -45,6 +45,16 @@ body {
     .nav-hamburger {
         display: block;
     }
+    .brandname {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .brandname {
+        font-size: 5px;
+        margin-right: 10px;
+    }
 }
 
 .nav-hamburger {
@@ -129,7 +139,7 @@ nav a {
 }
 
 .brandname {
-    padding-right: 100px;
+    margin-right: 100px;
 }
 
 .brandname a:hover {

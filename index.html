@@ -36,7 +36,8 @@
             <li style="float: right; margin-right: 20px;"><a href="#">Log In</a></li>
         </ul>
         <ul>
-            <li class="nav-hamburger"><a href="javascript:void(0)" onclick="ResponsiveNav()"><i class="fa fa-bars"></i></a></li>
+            <li id="nav-hamburger" class="nav-hamburger"><a href="javascript:void(0)" onclick="ResponsiveNav()"><i class="fa fa-bars"></i></a></li>
+            <li id="nav-hamburger-times" class="nav-hamburger-times"><a href="javascript:void(0)" onclick="ResponsiveNavTimes()"><i class="fa fa-times"></i></a></li>
         </ul>
     </nav>
     <div class="mainsection">
@@ -51,11 +52,17 @@
 <script>
     function ResponsiveNav() {
         var objectclass = document.getElementById("nav");
-        if (objectclass.className === "nav-links") {
-            objectclass.className += "-responsive";
-        } else {
-            objectclass.className = "nav-links";
-        }
+        var fafabars = document.getElementById("nav-hamburger");
+        document.getElementById("nav-hamburger").style.display = "none";
+        document.getElementById("nav-hamburger-times").style.display = "block";
+        objectclass.className += "-responsive";
+    }
+
+    function ResponsiveNavTimes() {
+        var objectclass = document.getElementById("nav");
+        document.getElementById("nav-hamburger-times").style.display = "none";
+        document.getElementById("nav-hamburger").style.display = "block";
+        objectclass.className = "nav-links";
     }
 </script>
 

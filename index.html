@@ -18,11 +18,11 @@
     <nav>
         <ul>
             <li>
-                <a href="#"><img src="Logo.png" alt="Logo" style="height: 40px; width: 40px;"></a>
+                <a href="#"><img class="nav-logo" src="Logo.png" alt="Logo"></a>
             </li>
             <li class="brandname"><a href="#"><b>Sensory Mechanics</b></a></li>
         </ul>
-        <ul class="nav-links">
+        <ul class="nav-links" id="nav">
             <li><a class="active" href="#">Home</a></li>
             <li><a href="#">Custom Orders</a></li>
             <div class="dropdown">
@@ -36,7 +36,7 @@
             <li style="float: right; margin-right: 20px;"><a href="#">Log In</a></li>
         </ul>
         <ul>
-            <li class="nav-hamburger"><i class="fa fa-bars"></i></li>
+            <li class="nav-hamburger"><a href="javascript:void(0)" onclick="ResponsiveNav()"><i class="fa fa-bars"></i></a></li>
         </ul>
     </nav>
     <div class="mainsection">
@@ -47,5 +47,16 @@
     </div>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
+
+<script>
+    function ResponsiveNav() {
+        var objectclass = document.getElementById("nav");
+        if (objectclass.className === "nav-links") {
+            objectclass.className += "-responsive";
+        } else {
+            objectclass.className = "nav-links";
+        }
+    }
+</script>
 
 </html>

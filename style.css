@@ -35,8 +35,16 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    font-weight: bold;
     font-size: 2rem;
     z-index: 2;
+}
+
+@media screen and (max-height: 500px) {
+    .mainsectiontext {
+        top: 220px;
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -217,6 +225,7 @@ nav a {
     outline: 2px solid #FFFFFF;
     outline-offset: 3px;
     font-size: 39%;
+    top: 100%;
     height: 50px;
     width: 100px;
     padding: 5px 10px;
@@ -225,9 +234,22 @@ nav a {
     color: black;
     z-index: 2;
     transition: 200ms;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .hero-button:hover {
     padding-bottom: 8px;
     transform: scale(1.03);
+}
+
+footer {
+    position: absolute;
+    bottom: 50;
+    width: 100%;
+    height: 200px;
+    background-color: #000000;
+    z-index: 999;
 }

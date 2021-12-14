@@ -290,6 +290,7 @@ footer {
 }
 
 .textbox input {
+    border-radius: 5px;
     outline-color: #197BBD;
     width: 100%;
     padding: 15px;
@@ -297,10 +298,6 @@ footer {
     border: 1px solid #dddddd;
     margin-bottom: 15px;
     box-sizing: border-box;
-}
-
-::placeholder {
-    color: #197BBD;
 }
 
 .login-btn {

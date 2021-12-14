@@ -309,11 +309,6 @@ footer {
     outline-color: #197BBD;
 }
 
-.login-btn:hover {
-    transform: scale(1.03);
-    background-color: #197BBD;
-}
-
 .forgot-password {
     float: right;
     color: #197BBD;

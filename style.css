@@ -229,7 +229,6 @@ nav a {
     height: 50px;
     width: 100px;
     padding: 5px 10px;
-    margin: 20% 40% 0% 40%;
     font-family: 'Titillium Web', sans-serif;
     color: black;
     z-index: 2;
@@ -305,8 +304,20 @@ footer {
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: transparent;
-    outline-color: #197BBD;
+    background-color: #197BBD;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    height: 40px;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    transition: 250ms;
+}
+
+.login-btn:hover {
+    background-color: #0f9af7;
+    padding-bottom: 4px;
 }
 
 .forgot-password {

@@ -308,6 +308,8 @@ footer {
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: transparent;
+    outline-color: #197BBD;
 }
 
 .login-btn:hover {

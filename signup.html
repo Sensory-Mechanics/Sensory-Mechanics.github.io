@@ -34,8 +34,8 @@
                     <li><a href="#">Kits</a></li>
                 </div>
             </div>
-            <li class="loginsignup"><a href="#">Log In</a></li>
-            <li class="loginsignup"><a href="signup.html">Sign Up</a></li>
+            <li class="loginsignup"><a href="login.html">Log In</a></li>
+            <li class="loginsignup"><a href="#">Sign Up</a></li>
         </ul>
         <ul>
             <li id="nav-hamburger" class="nav-hamburger"><a href="javascript:void(0)" onclick="ResponsiveNav()"><i class="fa fa-bars"></i></a></li>
@@ -43,20 +43,23 @@
         </ul>
     </nav>
     <div class="mainsection">
-        <div class="login-box">
+        <div class="signup-box">
             <form action="" method="post">
-                <h1>Log In</h1>
+                <h1>Sign Up</h1>
                 <div class="textbox">
                     <label><i class="fa fa-user"></i> Email Address</label>
                     <input type="text" name="username" required>
                 </div>
                 <div class="textbox">
-                    <label><i class="fa fa-lock"></i> Password</label><label class="forgot-password"><a href="#">Forgot Password?</a></label>
+                    <label><i class="fa fa-lock"></i> Password</label>
                     <input type="password" name="password" id="password" required>
                 </div>
-                <input type="checkbox" name="showpassword" id="showpassword"><label style="color: #197BBD;">Show password</label>
-                <input type="submit" class="login-btn" name="login" value="Login">
-                <p style="margin-top: 70px; color: #197BBD;">Don't have an account? <a href="#">Sign Up</a></p>
+                <div class="textbox">
+                    <label><i class="fa fa-lock"></i> Confirm Password</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <input type="checkbox" name="showpassword" id="showpassword"><label style="color: #197BBD;">Show passwords</label>
+                <input type="submit" class="signup-btn" name="signup" value="Sign Up">
             </form>
         </div>
     </div>

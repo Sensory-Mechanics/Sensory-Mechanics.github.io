@@ -63,12 +63,6 @@ body {
     }
 }
 
-@media screen and (min-width: 851px) {
-    .nav-hamburger {
-        display: none;
-    }
-}
-
 @media screen and (max-width: 500px) {
     .brandname {
         font-size: 0.5em;
@@ -79,6 +73,12 @@ body {
     .nav-logo {
         height: 20px;
         width: 20px;
+    }
+}
+
+@media screen and (min-width: 851px) {
+    .nav-hamburger {
+        display: none;
     }
 }
 
@@ -126,7 +126,7 @@ body {
     transform: rotate(180deg);
 }
 
-.login {
+.loginsignup {
     float: right;
     margin-right: 20px;
     margin-top: 0;
@@ -252,4 +252,70 @@ footer {
     height: 200px;
     background-color: #000000;
     z-index: 999;
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    padding: 40px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.login-box h1 {
+    margin: 0px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #197BBD;
+}
+
+.textbox {
+    margin: 0px 0px 50px 0px;
+    border: none;
+    background: transparent;
+    font-size: 1em;
+    outline: none;
+    height: 30px;
+    width: 100%;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #197BBD;
+}
+
+.textbox input {
+    outline-color: #197BBD;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 50px;
+    border: 1px solid #dddddd;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    color: #197BBD;
+}
+
+.login-btn {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-btn:hover {
+    transform: scale(1.03);
+    background-color: #197BBD;
+}
+
+.forgot-password {
+    float: right;
+    color: #197BBD;
 }

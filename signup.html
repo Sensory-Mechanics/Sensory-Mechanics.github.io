@@ -52,11 +52,11 @@
                 </div>
                 <div class="textbox">
                     <label><i class="fa fa-lock"></i> Password</label>
-                    <input type="password" name="password" id="password" required>
+                    <input type="password" name="password" id="password1" required>
                 </div>
                 <div class="textbox">
                     <label><i class="fa fa-lock"></i> Confirm Password</label>
-                    <input type="password" name="password" id="password" required>
+                    <input type="password" name="password" id="password2" required>
                 </div>
                 <input type="checkbox" name="showpassword" id="showpassword"><label style="color: #197BBD;">Show passwords</label>
                 <input type="submit" class="signup-btn" name="signup" value="Sign Up">
@@ -67,11 +67,17 @@
 
     <script>
         document.getElementById("showpassword").addEventListener("change", function() {
-            var show = document.getElementById("password");
-            if (show.type === "password") {
-                show.type = "text";
+            var show1 = document.getElementById("password1");
+            var show2 = document.getElementById("password2");
+            if (show1.type === "password") {
+                show1.type = "text";
             } else {
-                show.type = "password";
+                show1.type = "password";
+            }
+            if (show2.type === "password") {
+                show2.type = "text";
+            } else {
+                show2.type = "password";
             }
         });
 

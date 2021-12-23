@@ -17,6 +17,10 @@ body {
     background-color: #f9f9f9;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .mainsection {
     z-index: -1;
     position: relative;
@@ -95,14 +99,17 @@ body {
 }
 
 @media screen and (max-height: 550px) {
-    .signup-box {
-        margin-top: 200px;
-    }
     .login-box {
         margin-top: 150px;
     }
     .mainsection-moveable {
         height: 700px;
+    }
+}
+
+@media screen and (max-height: 620px) {
+    .signup-box {
+        margin-top: 150px;
     }
 }
 
@@ -246,6 +253,7 @@ nav a {
 }
 
 .hero-button {
+    margin-top: 50px;
     outline: 2px solid #FFFFFF;
     outline-offset: 3px;
     font-size: 39%;
@@ -263,6 +271,11 @@ nav a {
     text-align: center;
 }
 
+.hero-button a {
+    text-decoration: none;
+    color: black;
+}
+
 .hero-button:hover {
     padding-bottom: 8px;
     transform: scale(1.03);
@@ -273,7 +286,7 @@ footer {
     bottom: 50;
     width: 100%;
     height: 200px;
-    background-color: #000000;
+    background-color: #f9f9f9;
     z-index: 999;
 }
 
@@ -389,6 +402,46 @@ footer {
 .signup-btn:hover {
     background-color: #0f9af7;
     padding-bottom: 4px;
+}
+
+.w-o-l {
+    width: 50%;
+    background-color: #f9f9f9;
+}
+
+.w-o-l h1 {
+    margin: 0px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #197BBD;
+}
+
+.w-o-l p {
+    margin: 10px;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.w-o-r {
+    position: relative;
+    width: 50%;
+    background-color: #f9f9f9;
+    float: right;
+}
+
+.w-o-r h1 {
+    margin: 0px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #197BBD;
+}
+
+.w-o-r p {
+    margin: 10px;
+    text-align: justify;
+    font-size: 1rem;
 }
 
 .forgot-password {
